@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "account:dev": "nx serve account"
+    "account:dev": "nx serve account",
+    "api:dev": "nx serve api",
+    "all:dev": "nx run-many --target=serve --all --parallel=10"
   },
   "private": true,
   "dependencies": {
