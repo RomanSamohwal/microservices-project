@@ -8,7 +8,8 @@ import { UserEntity } from '../entities/user.entity';
 export class UserRepository {
   constructor(
     @InjectModel(User.name) private readonly userModel: Model<User>
-  ) {}
+  ) {
+  }
 
   async createUser(user: UserEntity) {
     const newUser = new this.userModel(user);
